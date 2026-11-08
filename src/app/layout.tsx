@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://md-fahidurrahim.netlify.app"),
   title: "Md. Fahidur Rahim | Software Developer",
   description: "Personal portfolio of Md. Fahidur Rahim - Software Developer with 2+ years of experience specializing in PHP, Laravel, MySQL, PostgreSQL, RESTful APIs, React, and modern web applications.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   keywords: ["Md. Fahidur Rahim", "Farhan", "Software Developer", "Laravel Developer", "PHP OOP", "Full Stack Developer", "Next.js", "React.js", "Dhaka", "Bangladesh"],
   authors: [{ name: "Md. Fahidur Rahim" }],
   creator: "Md. Fahidur Rahim",
@@ -40,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
-        <link rel="icon" href="/assets/profile.jpg" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </head>
       <body className="min-h-screen bg-[#080a0f] text-slate-100 antialiased selection:bg-[#00bfa6] selection:text-black">
         {children}
