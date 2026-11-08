@@ -218,30 +218,27 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Image Avatar Column */}
+          {/* Right Developer Workstation Visual Column */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
-            <div className="relative w-72 sm:w-80 md:w-96 aspect-square">
+            <div className="relative w-full max-w-md sm:max-w-lg aspect-square flex items-center justify-center">
               
-              {/* Outer Decorative Rings */}
-              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#00bfa6]/30 via-cyan-500/20 to-blue-600/30 blur-xl opacity-70 animate-pulse-slow" />
-              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#00bfa6] to-cyan-500 opacity-30" />
+              {/* Outer Decorative Rings & Glow */}
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#00bfa6]/25 via-cyan-500/20 to-blue-600/25 blur-2xl opacity-75 animate-pulse-slow" />
+              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#00bfa6] to-cyan-500 opacity-20" />
 
-              {/* Main Avatar Card */}
-              <div className="relative h-full w-full rounded-2xl overflow-hidden border-2 border-slate-700/80 shadow-2xl bg-slate-900">
+              {/* Workstation Graphic Container */}
+              <div className="relative h-full w-full rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-gradient-to-b from-[#0e1422] to-[#080b13] p-4 flex items-center justify-center">
                 <Image
-                  src={personalInfo.profileImage}
-                  alt={personalInfo.name}
+                  src="/assets/developer-workspace.svg"
+                  alt="Software Developer Workspace"
                   fill
                   priority
-                  className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                  className="object-contain p-2 hover:scale-105 transition-transform duration-500"
                 />
-                
-                {/* Subtle Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#080a0f] via-transparent to-transparent opacity-40" />
               </div>
 
               {/* Floating Tech Badges */}
-              <div className="absolute -bottom-4 -left-4 px-3.5 py-2 rounded-xl bg-slate-900/95 backdrop-blur-md border border-slate-700 shadow-xl flex items-center gap-2.5 animate-float">
+              <div className="absolute -bottom-3 -left-3 px-3.5 py-2 rounded-xl bg-slate-900/95 backdrop-blur-md border border-slate-700 shadow-xl flex items-center gap-2.5 animate-float">
                 <div className="w-7 h-7 relative">
                   <Image src="/assets/laravel.png" alt="Laravel" fill className="object-contain" />
                 </div>
@@ -261,7 +258,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="absolute top-1/2 -left-6 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-slate-900/95 border border-slate-800 shadow-lg hidden sm:flex items-center gap-2">
+              <div className="absolute top-1/2 -left-5 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-slate-900/95 border border-slate-800 shadow-lg hidden sm:flex items-center gap-2">
                 <div className="w-5 h-5 relative">
                   <Image src="/assets/database.png" alt="MySQL" fill className="object-contain" />
                 </div>
